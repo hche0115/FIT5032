@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Feedback";
+}
+<h2>@ViewBag.Title.</h2>
+
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model FIT5032_Week08A.Models.FeedbackModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+
+        @Html.LabelFor(m => m.FeedbackDetails)<br />
+        @Html.TextAreaFor(m => m.FeedbackDetails)
+        @Html.ValidationMessageFor(m => m.FeedbackDetails, "", new { @class = "error" })
+        <br /><br />
+        <input type="submit" value="Submit" />
+        <br />
+
+    }
+    @Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript" src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+    <script type="text/javascript">
+        tinymce.init({ selector: 'textarea', width: 500 });
+    </script>
+</body>
+</html>
+

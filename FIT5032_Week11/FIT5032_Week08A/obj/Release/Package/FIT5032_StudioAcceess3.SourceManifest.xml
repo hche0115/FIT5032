@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\63075\Desktop\5032\FIT5032_Email_Attachment_Demo\FIT5032_Week08A\FIT5032_Week08A\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Users\63075\Desktop\5032\FIT5032_Email_Attachment_Demo\FIT5032_Week08A\FIT5032_Week08A\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\63075\Desktop\5032\FIT5032_Email_Attachment_Demo\FIT5032_Week08A\FIT5032_Week08A\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>
