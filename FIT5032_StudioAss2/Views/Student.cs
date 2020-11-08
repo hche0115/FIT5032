@@ -21,6 +21,7 @@ namespace FIT5032_Week7.Views
 
         [Required]
         public string LastName { get; set; }
+        
 
         [Required]
         public string UserId { get; set; }

@@ -29,5 +29,9 @@ namespace FIT5032_Week7.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<FIT5032_Week7.Views.Unit> Units { get; set; }
+
+        public System.Data.Entity.DbSet<FIT5032_Week7.Views.Student> Students { get; set; }
     }
 }
